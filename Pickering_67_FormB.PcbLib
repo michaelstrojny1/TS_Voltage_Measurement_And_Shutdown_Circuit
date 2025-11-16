@@ -1,0 +1,28 @@
+PCB 5.0 ASCII
+PCB Library Document
+Date= 2025-11-12
+Time= 21:19:41
+Encoding=ASCII
+
+LibraryHeader
+  LibraryName = 'Pickering_67_FormB'
+  LibraryType = 'PCB'
+EndLibraryHeader
+
+Pattern 'FP_Pickering_67_SIL4_2.54mm'
+  PadStyleNormal "TH_0p9_Dia1p8" 0.9 1.8 0 0 0 0
+  Pad 1 "TH_0p9_Dia1p8" 0 0 0 0 0 0 'COIL+'
+  Pad 2 "TH_0p9_Dia1p8" 2.54 0 0 0 0 0 'COIL-'
+  Pad 3 "TH_0p9_Dia1p8" 5.08 0 0 0 0 0 'COM'
+  Pad 4 "TH_0p9_Dia1p8" 7.62 0 0 0 0 0 'NC'
+
+  # Courtyard (Mech 15) ~ 36 x 12 mm centered around pins
+  Track  -10  -6  26  -6  0.15 15
+  Track   26  -6  26   6  0.15 15
+  Track   26   6 -10   6  0.15 15
+  Track  -10   6 -10  -6  0.15 15
+
+  Text "K?" -9 7 1.0 0 25 0 0 0
+EndPattern
+
+EndLibrary

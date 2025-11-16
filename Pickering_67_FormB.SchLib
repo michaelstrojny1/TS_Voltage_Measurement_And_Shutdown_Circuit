@@ -1,0 +1,51 @@
+PCB 5.0 ASCII
+Schematic Library Document
+Date= 2025-11-12
+Time= 21:19:41
+Encoding=ASCII
+
+LibraryHeader
+  LibraryName = 'Pickering_67_FormB'
+  LibraryType = 'Schematic'
+EndLibraryHeader
+
+Component
+  Name = 'Pickering_67-1-B-12_2D'
+  Description = 'Pickering Series 67 High-Voltage Reed Relay, Form B (NC), 12V coil, with diode'
+  Height = 0
+  Area = 0 0 1000 600
+  DefaultDesignator = 'K?'
+  Comment = '67-1-B-12/2D'
+  Footprint = 'FP_Pickering_67_SIL4_2.54mm'
+  Parameter 'Manufacturer' = 'Pickering Electronics'
+  Parameter 'MPN' = '67-1-B-12/2D'
+  Parameter 'Contact Form' = 'Form B (NC)'
+  Parameter 'Coil Voltage' = '12V'
+  Parameter 'Switching Voltage (family max)' = '7.5kV'
+  Parameter 'Standoff Voltage (family typ)' = '>=5kV'
+  Parameter 'Carry Current (family max)' = '>=1.5A'
+  Parameter 'Notes' = 'NC contact closes when coil unpowered; use with HV bleeder.'
+
+  Pin 1 100 300 Length=50 Orientation=0 Name='COIL+'
+  Pin 2 100 400 Length=50 Orientation=0 Name='COIL-'
+  Pin 3 800 320 Length=50 Orientation=2 Name='COM'
+  Pin 4 800 420 Length=50 Orientation=2 Name='NC'
+
+  # Coil symbol
+  Wire 300 260 300 460
+  Wire 300 300 360 300
+  Arc 360 300 360 400 40 40
+  Wire 360 400 300 400
+
+  # Contact symbol (NC)
+  Wire 700 320 740 320
+  Wire 740 320 760 340
+  Wire 760 420 740 400
+  Wire 700 420 740 420
+
+  Text 120 280 0 10 'Coil'
+  Text 720 300 0 10 'COM'
+  Text 720 400 0 10 'NC'
+EndComponent
+
+EndLibrary
